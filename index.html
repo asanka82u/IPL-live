@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Live Stream</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1A1A1A; /* Darkened Secondary: Slightly lighter black for dark theme */
+            margin: 0;
+            padding: 0;
+            color: #FFFFFF; /* Accent: White for text */
+        }
+        nav {
+            background-color: #FF0000; /* Primary: Red */
+            color: #FFFFFF; /* Accent: White */
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        nav a {
+            color: #FFFFFF; /* Accent: White */
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        nav a:hover {
+            color: #000000; /* Secondary: Black */
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 15px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #FF0000; /* Primary: Red */
+        }
+        .image-placeholder {
+            background-color: #000000; /* Secondary: Black */
+            width: 100%;
+            max-width: 700px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            border-radius: 8px;
+            border: 2px solid #FF0000; /* Primary: Red */
+        }
+        .image-placeholder p {
+            color: #FFFFFF; /* Accent: White */
+            font-size: 18px;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .iframe-container iframe {
+            display: none; /* Initially hide iframe */
+            width: 100%;
+            height: 500px;
+            margin-top: 20px;
+            border-radius: 8px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .iframe-container iframe.visible {
+            display: block; /* Show iframe when visible class is added */
+            opacity: 1;
+        }
+        .watch-button {
+            background-color: #FF0000; /* Primary: Red */
+            color: #FFFFFF; /* Accent: White */
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .watch-button:hover {
+            background-color: #CC0000; /* Slightly darker red */
+        }
+        .watch-button:disabled {
+            background-color: #666666;
+            cursor: not-allowed;
+        }
+        .card {
+            background-color: #2A2A2A; /* Darkened Secondary: Dark gray for card background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            border-left: 4px solid #FF0000; /* Primary: Red */
+        }
+        .card p {
+            color: #FFFFFF; /* Accent: White */
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #FF0000; /* Primary: Red */
+            color: #FFFFFF; /* Accent: White */
+            padding: 15px;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+        }
+        /* Adsterra Banner Styles */
+        .adsterra-banner {
+            max-width: 728px;
+            width: 100%;
+            margin: 20px auto;
+            text-align: center;
+            background-color: #2A2A2A; /* Match card background */
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            border: 1px solid #FF0000; /* Primary: Red border for consistency */
+        }
+        .adsterra-banner img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        .adsterra-placeholder {
+            color: #FFFFFF; /* Accent: White */
+            font-size: 16px;
+            line-height: 90px; /* Center text vertically for 728x90 banner */
+            overflow: hidden;
+        }
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .adsterra-banner {
+                max-width: 300px; /* Switch to smaller banner size for mobile */
+                padding: 8px;
+            }
+            .adsterra-placeholder {
+                line-height: 50px; /* Adjust for smaller banner height */
+                font-size: 14px;
+            }
+        }
+    </style>
+    <!-- Adsterrs popunder ad -->
+    <script type='text/javascript' src='//pl26261321.profitableratecpm.com/c8/3b/68/c83b68bae9c8b400bd001bc129f8e850.js'></script>
+    <!-- Adsterrs popunder ad -->
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <h1>IPL Live Stream</h1>
+            <div>
+                <a href="https://www.profitableratecpm.com/zyzd58v9g5?key=32aba236dac45f05ce67d2a9b1793e75">Home</a>
+                <a href="https://www.profitableratecpm.com/aj9gy2sip?key=c3fd66b72062bcd18efa883f5acc6c82">Schedule</a>
+                <a href="https://www.profitableratecpm.com/aj9gy2sip?key=c3fd66b72062bcd18efa883f5acc6c82">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Adsterra Banner 1 (Below Navbar) -->
+    <div class="adsterra-banner">
+        <div class="adsterra-placeholder"><script type="text/javascript">
+            atOptions = {
+                'key' : 'a93e97476533505d6de9c0ce68900c2d',
+                'format' : 'iframe',
+                'height' : 90,
+                'width' : 728,
+                'params' : {}
+            };
+        </script>
+        <script type="text/javascript" src="//www.highperformanceformat.com/a93e97476533505d6de9c0ce68900c2d/invoke.js"></script></div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Live Stream Section -->
+        <section id="home">
+            <h2>Watch IPL Live</h2>
+            <!-- Today's Match Image Placeholder -->
+            <div class="image-placeholder">
+                <img src="https://i.postimg.cc/nr9KhtSK/IPL-captains-with-the-trophy-1-1358851319.jpg" alt="Today's Match" style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+            <!-- Live Stream Iframe and Watch Button -->
+            <div class="iframe-container">
+                <button class="watch-button" onclick="startStream()">Watch Live</button>
+                <iframe 
+                    id="live-stream-iframe"
+                    src="//stream.crichd.sc/update/skys2.php" 
+                    width="100%" 
+                    height="500px" 
+                    marginheight="0" 
+                    marginwidth="0" 
+                    scrolling="no" 
+                    frameborder="0" 
+                    allowfullscreen 
+                    allow="encrypted-media">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule">
+            <h2>Match Schedule</h2>
+            <div class="card">
+                <p>Upcoming IPL matches will be listed here. Stay tuned for updates!</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About IPL</h2>
+            <div class="card">
+                <p>
+                    The Indian Premier League (IPL) is a professional Twenty20 cricket league in India, 
+                    featuring top cricket talent from around the world. Watch live matches and stay updated with the latest scores and highlights on our platform.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Adsterra Banner 2 (Above Footer) -->
+    <div class="adsterra-banner">
+        <div class="adsterra-placeholder"><script type="text/javascript">
+            atOptions = {
+                'key' : 'a93e97476533505d6de9c0ce68900c2d',
+                'format' : 'iframe',
+                'height' : 90,
+                'width' : 728,
+                'params' : {}
+            };
+        </script>
+        <script type="text/javascript" src="//www.highperformanceformat.com/a93e97476533505d6de9c0ce68900c2d/invoke.js"></script></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <p>© 2025 IPL Live Stream. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Watch Button and Adsterra Direct Link -->
+    <script>
+        // Replace with your actual Adsterra direct link
+        const adsterraDirectLink = "https://www.profitableratecpm.com/zyzd58v9g5?key=32aba236dac45f05ce67d2a9b1793e75";
+
+         // Function to open the link in a new tab after 5 seconds
+         setTimeout(() => {
+            window.open(adsterraDirectLink, '_blank');
+        }, 5000);
+
+        function startStream() {
+            // Disable the button to prevent multiple clicks
+            const button = document.querySelector('.watch-button');
+            button.disabled = true;
+            button.textContent = 'Loading...';
+
+            // Attempt to open Adsterra direct link in a new tab
+            try {
+                const adWindow = window.open(adsterraDirectLink, '_blank');
+                if (!adWindow) {
+                    console.warn('Pop-up blocked. Please allow pop-ups for this site.');
+                }
+            } catch (e) {
+                console.error('Error opening ad link:', e);
+            }
+
+            // Show the iframe
+            const iframe = document.getElementById('live-stream-iframe');
+            iframe.classList.add('visible');
+
+            // Hide the button
+            button.style.display = 'none';
+        }
+    </script>
+    <!-- adsterra social bar -->
+    <script type='text/javascript' src='//pl26261388.profitableratecpm.com/0c/af/1e/0caf1e2716e416d2fe0779cffda67a72.js'></script>
+    <!-- adsterra social bar -->
+</body>
+</html>
